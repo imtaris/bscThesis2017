@@ -20,7 +20,9 @@ To fully recreate the research requires:
 
 ### CSI Corpus
 
+The created classification system is trained and tested using the reviews from the CLiPS Stylometry Investigation (CSI) corpus, a Dutch corpus developed by the University of Antwerp. The corpus is updated on an annual basis and currently contains 1298 reviews and 517 essays written by 661 students. Whereas only the reviews are annotated as being truthful or deceptive, this research will focus only on the 1298 reviews written by 618 authors. 
 
+The corpus contains the original reviews and a preproccesed version. In this preprocessed version, all the product names have been replaced with a *propname* tag. This version will be used to improve the robustness of the classifier with respect to cross-domain applications.
 
 ## Preprocess the reviews
 
@@ -48,7 +50,13 @@ Once set, run 'python3 process_parse_output.py' to extract the five selected fie
 
 ### Create features and perform classification
 
+There are two classification files:
+* classifier_chi2.py
+* classifier.py
 
+The former version has implemented a chi-square filter for selecting high informative features. The latter does not include such a filter. The file 'frequency_threshold_filter.py' can be used to create a pickle file that can be implemented by either of the classifiers to filter words that do not occur at least 5 times.
+
+The function 'create_features()' in both classifiers produces all features for each review. Each feature can be commented out to customize the feature setup. In 'main()' one can choose which learning model is to be used.
 
 ## Acknowledgments
 
