@@ -24,7 +24,9 @@ The created classification system is trained and tested using the reviews from t
 
 The corpus contains the original reviews and a preproccesed version. In this preprocessed version, all the product names have been replaced with a *propname* tag. This version will be used to improve the robustness of the classifier with respect to cross-domain applications.
 
-## Preprocess the reviews
+## Practical steps
+
+### Preprocess the reviews
 
 The script 'preprocessor_propname.py' requires the absolute path to the 'reviews_propname' directory.
 
