@@ -64,4 +64,4 @@ The function 'create_features()' in both classifiers produces all features for e
 
 * Supervision by Dr. B. Plank, Assistant Professor, University of Groningen
 * Data obtained from: Verhoeven, Ben & Daelemans Walter. (2014) CLiPS Stylometry Investigation (CSI) corpus: A Dutch corpus for the detection of age, gender, personality, sentiment and deception in text. In: Proceedings of the 9th International Conference on Language Resources and Evaluation (LREC 2014). Reykjavik, Iceland.
-* Used elements of the file 'featx.py' from Perkins, J. (2010). Python text processing with NLTK 2.0 cookbook. Packt Pub- lishing Ltd.
+* Used elements of the file 'featx.py' from Perkins, J. (2010). Python text processing with NLTK 2.0 cookbook. Packt Publishing Ltd.
